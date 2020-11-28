@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.a7e9243b63e1f546879d7930b98aa363.js"
+  "/venom-ui-template/precache-manifest.25bb0a5ead25573d2ad2301924c470ea.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "@grtjn/venom-ui-template"});
