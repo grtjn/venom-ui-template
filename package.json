@@ -1,13 +1,16 @@
 {
-  "name": "venom-ui-template",
-  "version": "0.1.0",
+  "name": "@grtjn/venom-ui-template",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
+    "start": "npm run serve",",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "NODE_ENV=test vue-cli-service test:unit",
+    "test:e2e": "NODE_ENV=test vue-cli-service test:e2e --headless",
+    "lint": "vue-cli-service lint",
+    "lint:fix": "vue-cli-service lint --fix"
   },
   "dependencies": {
     "core-js": "^3.6.5",
