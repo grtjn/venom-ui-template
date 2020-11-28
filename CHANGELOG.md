@@ -1,10 +1,23 @@
 # Change Log
 
-## [Unreleased](https://github.com/grtjn/venom-ui-template/tree/HEAD)
-
+## [v1.0.0](https://github.com/grtjn/venom-ui-template/tree/v1.0.0) (2020-11-28)
 **Implemented enhancements:**
 
+- Strict robots rules [\#15](https://github.com/grtjn/venom-ui-template/issues/15)
+- Enable testing frameworks [\#6](https://github.com/grtjn/venom-ui-template/issues/6)
+- Enable Vuex store [\#5](https://github.com/grtjn/venom-ui-template/issues/5)
+- Enable Vue-Router [\#4](https://github.com/grtjn/venom-ui-template/issues/4)
 - Insert base Vue-CLI template [\#1](https://github.com/grtjn/venom-ui-template/issues/1)
+- Development [\#17](https://github.com/grtjn/venom-ui-template/pull/17) ([grtjn](https://github.com/grtjn))
+
+**Fixed bugs:**
+
+- Fix default code style [\#13](https://github.com/grtjn/venom-ui-template/issues/13)
+
+**Closed issues:**
+
+- Add Changelog [\#8](https://github.com/grtjn/venom-ui-template/issues/8)
+- Add Contrib guide [\#7](https://github.com/grtjn/venom-ui-template/issues/7)
 
 
 
