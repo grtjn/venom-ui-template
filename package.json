@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
-    "start": "npm run serve",",
+    "start": "npm run serve",
     "build": "vue-cli-service build",
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "NODE_ENV=test vue-cli-service test:unit",
