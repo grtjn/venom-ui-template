@@ -1,5 +1,23 @@
 # Change Log
 
+## [v1.0.1](https://github.com/grtjn/venom-ui-template/tree/v1.0.1) (2020-11-30)
+[Full Changelog](https://github.com/grtjn/venom-ui-template/compare/v1.0.0...v1.0.1)
+
+**Implemented enhancements:**
+
+- Add minimal branding [\#16](https://github.com/grtjn/venom-ui-template/issues/16)
+- Enable icons [\#14](https://github.com/grtjn/venom-ui-template/issues/14)
+- Add dynamic header navigation menu [\#12](https://github.com/grtjn/venom-ui-template/issues/12)
+- Enable router state [\#11](https://github.com/grtjn/venom-ui-template/issues/11)
+- Create basic Header/Footer layout  [\#3](https://github.com/grtjn/venom-ui-template/issues/3)
+- Enable Bootstrap and BootstrapVue [\#2](https://github.com/grtjn/venom-ui-template/issues/2)
+- Development [\#18](https://github.com/grtjn/venom-ui-template/pull/18) ([grtjn](https://github.com/grtjn))
+
+**Closed issues:**
+
+- Initial release [\#10](https://github.com/grtjn/venom-ui-template/issues/10)
+- Enable github.io with copy of running UI [\#9](https://github.com/grtjn/venom-ui-template/issues/9)
+
 ## [v1.0.0](https://github.com/grtjn/venom-ui-template/tree/v1.0.0) (2020-11-28)
 **Implemented enhancements:**
 
