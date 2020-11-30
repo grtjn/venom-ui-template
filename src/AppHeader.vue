@@ -1,6 +1,7 @@
 <template>
   <header role="page-header">
     <nav role="top-navigation">
+      <!-- show toggle for md and smaller, full navbar for lg and larger -->
       <b-navbar toggleable="lg" variant="primary" type="dark">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -10,8 +11,8 @@
         </b-navbar-brand>
 
         <b-collapse id="nav-collapse" is-nav>
-          <!-- centered using margin-left/right auto -->
-          <b-navbar-nav class="nav-pills ml-auto mr-auto">
+          <!-- perfectly centered (custom class in App.vue) -->
+          <b-navbar-nav class="nav-pills perfect-center-lg">
             <!-- main header nav link, driven by meta-info from routes -->
             <b-nav-item
               v-for="(route, $index) in headerRoutes"
@@ -24,6 +25,13 @@
               {{ route.meta.label || route.name }}
             </b-nav-item>
           </b-navbar-nav>
+
+          <!-- show name/version on the right -->
+          <b-nav-text class="ml-auto">
+            <small>
+              <em>{{ name }} / {{ version }}</em>
+            </small>
+          </b-nav-text>
         </b-collapse>
       </b-navbar>
     </nav>
@@ -31,8 +39,17 @@
 </template>
 
 <script>
+'use strict';
+
 export default {
   name: 'AppHeader',
+  data() {
+    let version = process.env.VUE_APP_VERSION;
+    return {
+      name: process.env.VUE_APP_NAME,
+      version: version[0] === 'v' ? version : 'v' + version
+    };
+  },
   computed: {
     headerRoutes() {
       return this.$router.options.routes.filter(function(route) {
