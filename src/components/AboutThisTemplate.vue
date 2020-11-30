@@ -1,6 +1,16 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <section role="documentation">
+    <h1>About This Template</h1>
+    <p>
+      You are looking at a UI based on Venom UI Template. It was initially
+      generated with
+      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli</a
+      >, but extended with a real life UI that intends to deliver a good
+      starting point for Search or Data heavy web applications. Below some
+      generic pointers on vue-cli and used plugins. In addition, this UI makes
+      heavy use of Bootstrap, and BootstrapVue.
+    </p>
+    <h2>Vue.js and Vue CLI</h2>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -123,15 +133,14 @@
         >
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script>
+'use strict';
+
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'AboutThisTemplate'
 };
 </script>
 
