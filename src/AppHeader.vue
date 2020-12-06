@@ -1,6 +1,7 @@
 <template>
   <header role="page-header">
     <nav role="top-navigation">
+      <!-- show toggle for md and smaller, full navbar for lg and larger -->
       <b-navbar toggleable="lg" variant="primary" type="dark">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -10,19 +11,24 @@
         </b-navbar-brand>
 
         <b-collapse id="nav-collapse" is-nav>
-          <!-- centered using margin-left/right auto -->
-          <b-navbar-nav class="nav-pills ml-auto mr-auto">
-            <!-- main header nav link, driven by meta-info from routes -->
+          <!-- perfectly centered (custom class in App.vue) -->
+          <b-navbar-nav class="nav-pills perfect-center-lg">
+            <!-- main header nav links, driven by meta-info from routes -->
             <b-nav-item
               v-for="(route, $index) in headerRoutes"
               :key="$index"
               :to="{ name: route.name, params: { prev: $route.name } }"
               exact
               exact-active-class="active bg-dark"
-              link-classes="pl-4 pr-4"
+              link-classes="ml-2 mr-2 pl-4 pr-4"
             >
               {{ route.meta.label || route.name }}
             </b-nav-item>
+          </b-navbar-nav>
+
+          <!-- show name/version on the right -->
+          <b-navbar-nav class="nav-pills ml-auto">
+            <UserMenu :isAuthenticated="isAuthenticated" />
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -31,9 +37,19 @@
 </template>
 
 <script>
+'use strict';
+
+import UserMenu from '@/components/UserMenu';
+
 export default {
   name: 'AppHeader',
+  components: {
+    UserMenu
+  },
   computed: {
+    isAuthenticated() {
+      return this.$store.getters.isAuthenticated;
+    },
     headerRoutes() {
       return this.$router.options.routes.filter(function(route) {
         return route.meta && route.meta.showInHeader;

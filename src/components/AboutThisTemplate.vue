@@ -1,6 +1,29 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <section role="about-this-template">
+    <h1>About This Template</h1>
+    <p>
+      You are looking at a UI based on Venom UI Template. It was initially
+      generated with
+      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli</a
+      >, but extended with a real life UI that intends to deliver a good
+      starting point for Search or Data heavy web applications. Below some
+      generic pointers on vue-cli and used plugins. In addition, this UI makes
+      heavy use of Bootstrap, and BootstrapVue.
+    </p>
+    <h2>Features</h2>
+    <ul class="list">
+      <li>Starter template for Search or Data heavy web applications</li>
+      <li>
+        Optimal use of Bootstrap, and BootstrapVue, without getting too
+        opinionated
+      </li>
+      <li>Dynamic Header navigation, driven from Router config</li>
+      <li>Login functionality built-in</li>
+      <li>Clean and polished code base</li>
+      <li>Robust and resilient</li>
+      <li>Test coverage</li>
+    </ul>
+    <h2>Vue.js and Vue CLI</h2>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -9,7 +32,7 @@
       >.
     </p>
     <h3>Installed CLI Plugins</h3>
-    <ul>
+    <ul class="list-inline">
       <li>
         <a
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
@@ -68,7 +91,7 @@
       </li>
     </ul>
     <h3>Essential Links</h3>
-    <ul>
+    <ul class="list-inline">
       <li>
         <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
       </li>
@@ -92,7 +115,7 @@
       </li>
     </ul>
     <h3>Ecosystem</h3>
-    <ul>
+    <ul class="list-inline">
       <li>
         <a href="https://router.vuejs.org" target="_blank" rel="noopener"
           >vue-router</a
@@ -123,32 +146,24 @@
         >
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script>
+'use strict';
+
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'AboutThisTemplate'
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+<style lang="scss">
+@import '~bootstrap';
+
+// prevent some unnecessary typing
+section[role='about-this-template'] {
+  ul.list-inline > li {
+    @extend .list-inline-item;
+  }
 }
 </style>

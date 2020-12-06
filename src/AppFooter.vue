@@ -1,14 +1,20 @@
 <template>
   <footer role="page-footer">
-    <b-navbar variant="secondary" type="dark">
+    <!-- Using help from flex and justify to:
+         stack vertically for md and smaller, justify between for lg and larger -->
+    <b-navbar
+      variant="secondary"
+      type="dark"
+      class="flex-column flex-lg-row justify-content-lg-between"
+    >
       <!-- left -->
       <b-nav class="navbar-nav" role="copyright">
         <b-nav-text> &copy; {{ currentYear }} Grtjn.</b-nav-text>
       </b-nav>
 
-      <!-- centered -->
+      <!-- perfectly centered (custom class in App.vue) -->
       <b-nav
-        class="navbar-nav ml-auto mr-auto"
+        class="navbar-nav perfect-center-lg"
         v-if="showSocial"
         role="social-navigation"
       >
@@ -45,7 +51,12 @@
       </b-nav>
 
       <!-- right -->
-      <b-nav pills class="navbar-nav" role="home-navigation">
+      <b-nav
+        pills
+        class="navbar-nav justify-content-end"
+        v-if="showPoweredBy"
+        role="home-navigation"
+      >
         <b-nav-text><small>Powered by</small></b-nav-text>
 
         <b-nav-item
@@ -117,9 +128,16 @@
 </template>
 
 <script>
+'use strict';
+
 export default {
   name: 'AppFooter',
   props: {
+    showPoweredBy: {
+      type: Boolean,
+      required: false,
+      default: true
+    },
     showSocial: {
       type: Boolean,
       required: false,

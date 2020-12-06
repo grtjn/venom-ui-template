@@ -15,6 +15,8 @@
 </template>
 
 <script>
+'use strict';
+
 import AppHeader from './AppHeader.vue';
 import AppFooter from './AppFooter.vue';
 
@@ -40,6 +42,13 @@ export default {
   .app-content {
     margin-top: 3em;
     margin-bottom: 3em;
+  }
+}
+@media (min-width: 992px) {
+  .perfect-center-lg {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 </style>

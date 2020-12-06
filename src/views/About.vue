@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <section role="about">
+    <AboutThisTemplate />
+  </section>
 </template>
+
+<script>
+'use strict';
+
+import AboutThisTemplate from '@/components/AboutThisTemplate.vue';
+
+export default {
+  name: 'About',
+  components: {
+    AboutThisTemplate
+  }
+};
+</script>
