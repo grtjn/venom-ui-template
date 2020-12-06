@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "docs": "BASE_URL=/venom-ui-template/ npm run build && rm -rf docs/ && cp -r dist docs && echo done",
     "test": "npm run test:unit && npm run test:e2e",
-    "test:unit": "NODE_ENV=test vue-cli-service test:unit",
+    "test:unit": "NODE_ENV=test vue-cli-service test:unit --verbose",
     "test:e2e": "NODE_ENV=test vue-cli-service test:e2e --headless",
     "lint": "vue-cli-service lint",
     "lint:fix": "vue-cli-service lint --fix"
