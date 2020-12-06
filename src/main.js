@@ -1,6 +1,7 @@
+'use strict';
+
 import Vue from 'vue';
-import { sync } from 'vuex-router-sync';
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue';
 
 import App from './App.vue';
 import './registerServiceWorker';
@@ -9,10 +10,8 @@ import store from './store';
 
 import './styles/custom.scss';
 
-sync(store, router);
-
 Vue.use(BootstrapVue);
-Vue.use(IconsPlugin);
+Vue.use(BootstrapVueIcons);
 
 Vue.config.productionTip = false;
 
