@@ -1,4 +1,4 @@
-header[role=page-header] .logo:hover{filter:brightness(90%)}header[role=page-header] .active.bg-dark:hover,section[role=page-footer] .nav-link img:hover{filter:brightness(70%)}#app .fade-enter-active,#app .fade-leave-active{transition:opacity .2s ease}#app .fade-enter,#app .fade-leave-active{opacity:0}#app .app-content{margin-top:3em;margin-bottom:3em}
+header[role=page-header] .logo:hover{filter:brightness(90%)}header[role=page-header] .active.bg-dark:hover,section[role=page-footer] .nav-link img:hover{filter:brightness(70%)}#app .fade-enter-active,#app .fade-leave-active{transition:opacity .2s ease}#app .fade-enter,#app .fade-leave-active{opacity:0}#app .app-content{margin-top:3em;margin-bottom:3em}@media(min-width:992px){.perfect-center-lg{position:absolute;left:50%;transform:translate(-50%)}}
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85df33283ad72e033734",
-    "url": "/venom-ui-template/css/app.cfcc18a1.css"
+    "revision": "9c0b8ac343ee508cc7c8",
+    "url": "/venom-ui-template/css/about.a06cdce7.css"
   },
   {
-    "revision": "2586c7e70977ad998c6c",
-    "url": "/venom-ui-template/css/home.5863980a.css"
+    "revision": "5435e03e7492cde4d0b6",
+    "url": "/venom-ui-template/css/app.d72249e0.css"
   },
   {
     "revision": "f3207d1c9f1d42abada4addef036667f",
@@ -64,24 +64,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/venom-ui-template/img/logo.9405b997.svg"
   },
   {
-    "revision": "46f341460a035452c50a49ffe495efe9",
+    "revision": "8fc297c65a657d8130519146b57f9c91",
     "url": "/venom-ui-template/index.html"
   },
   {
-    "revision": "750553a6b2267c33e1b8",
-    "url": "/venom-ui-template/js/about.a46099bb.js"
+    "revision": "9c0b8ac343ee508cc7c8",
+    "url": "/venom-ui-template/js/about.00cbb4d1.js"
   },
   {
-    "revision": "85df33283ad72e033734",
-    "url": "/venom-ui-template/js/app.0b5ad8c1.js"
+    "revision": "5435e03e7492cde4d0b6",
+    "url": "/venom-ui-template/js/app.1262dfee.js"
   },
   {
-    "revision": "021bb47a02dd66a640c4",
-    "url": "/venom-ui-template/js/chunk-vendors.690175a8.js"
+    "revision": "df08b8fc58bdd5d74f32",
+    "url": "/venom-ui-template/js/chunk-vendors.f2bf1470.js"
   },
   {
-    "revision": "2586c7e70977ad998c6c",
-    "url": "/venom-ui-template/js/home.9b6ca602.js"
+    "revision": "bff1d18be16081cdf0c1",
+    "url": "/venom-ui-template/js/home.013777ce.js"
+  },
+  {
+    "revision": "2410275636f8302fcf2d",
+    "url": "/venom-ui-template/js/login.2609d513.js"
+  },
+  {
+    "revision": "2f611dad85f64aae8067",
+    "url": "/venom-ui-template/js/logout.988e2d86.js"
   },
   {
     "revision": "dfa1c11a128e114bc77a8666eae004c9",
