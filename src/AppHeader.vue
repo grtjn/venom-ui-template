@@ -13,25 +13,23 @@
         <b-collapse id="nav-collapse" is-nav>
           <!-- perfectly centered (custom class in App.vue) -->
           <b-navbar-nav class="nav-pills perfect-center-lg">
-            <!-- main header nav link, driven by meta-info from routes -->
+            <!-- main header nav links, driven by meta-info from routes -->
             <b-nav-item
               v-for="(route, $index) in headerRoutes"
               :key="$index"
               :to="{ name: route.name, params: { prev: $route.name } }"
               exact
               exact-active-class="active bg-dark"
-              link-classes="pl-4 pr-4"
+              link-classes="ml-2 mr-2 pl-4 pr-4"
             >
               {{ route.meta.label || route.name }}
             </b-nav-item>
           </b-navbar-nav>
 
           <!-- show name/version on the right -->
-          <b-nav-text class="ml-auto">
-            <small>
-              <em>{{ name }} / {{ version }}</em>
-            </small>
-          </b-nav-text>
+          <b-navbar-nav class="nav-pills ml-auto">
+            <UserMenu :isAuthenticated="isAuthenticated" />
+          </b-navbar-nav>
         </b-collapse>
       </b-navbar>
     </nav>
@@ -41,16 +39,17 @@
 <script>
 'use strict';
 
+import UserMenu from '@/components/UserMenu';
+
 export default {
   name: 'AppHeader',
-  data() {
-    let version = process.env.VUE_APP_VERSION;
-    return {
-      name: process.env.VUE_APP_NAME,
-      version: version[0] === 'v' ? version : 'v' + version
-    };
+  components: {
+    UserMenu
   },
   computed: {
+    isAuthenticated() {
+      return this.$store.getters.isAuthenticated;
+    },
     headerRoutes() {
       return this.$router.options.routes.filter(function(route) {
         return route.meta && route.meta.showInHeader;
