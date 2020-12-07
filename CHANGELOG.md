@@ -1,5 +1,29 @@
 # Change Log
 
+## [v1.1.0](https://github.com/grtjn/venom-ui-template/tree/v1.1.0) (2020-12-06)
+[Full Changelog](https://github.com/grtjn/venom-ui-template/compare/v1.0.1...v1.1.0)
+
+**Implemented enhancements:**
+
+- Add route guards to enforce login [\#28](https://github.com/grtjn/venom-ui-template/issues/28)
+- Add dynamic user menu [\#27](https://github.com/grtjn/venom-ui-template/issues/27)
+- Add Login page [\#26](https://github.com/grtjn/venom-ui-template/issues/26)
+- Show dynamic version in Header [\#25](https://github.com/grtjn/venom-ui-template/issues/25)
+- Move Home contents to About [\#22](https://github.com/grtjn/venom-ui-template/issues/22)
+- Initial test code [\#21](https://github.com/grtjn/venom-ui-template/issues/21)
+- Stub client for login logic [\#20](https://github.com/grtjn/venom-ui-template/issues/20)
+- Add Login state [\#19](https://github.com/grtjn/venom-ui-template/issues/19)
+
+**Fixed bugs:**
+
+- Clean up About page [\#29](https://github.com/grtjn/venom-ui-template/issues/29)
+- Fix Header/Footer center alignment [\#24](https://github.com/grtjn/venom-ui-template/issues/24)
+- Fix Header toggle [\#23](https://github.com/grtjn/venom-ui-template/issues/23)
+
+**Merged pull requests:**
+
+- Development [\#30](https://github.com/grtjn/venom-ui-template/pull/30) ([grtjn](https://github.com/grtjn))
+
 ## [v1.0.1](https://github.com/grtjn/venom-ui-template/tree/v1.0.1) (2020-11-30)
 [Full Changelog](https://github.com/grtjn/venom-ui-template/compare/v1.0.0...v1.0.1)
 
